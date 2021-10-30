@@ -6,7 +6,6 @@ class Ingredient(models.Model):
         "Название",
         max_length=100,
         unique=True,
-        null=False,
     )
 
     def __str__(self):
@@ -19,8 +18,9 @@ class Ingredient(models.Model):
 
 
 class Recipe(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField("Название", max_length=200)
     description = models.TextField(
+        "Описание",
         blank=True,
     )
 
@@ -40,5 +40,12 @@ class Recipe(models.Model):
 
 
 class RecipeIngredients(models.Model):
+    """A model for many-to-many relation between Recipe and Ingredient."""
+
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.PROTECT)
+    amount = models.CharField("Количество", max_length=100, blank=True)
+
+    class Meta:
+        verbose_name = "Ингредиент рецепта"
+        verbose_name_plural = "Ингредиенты рецепта"
