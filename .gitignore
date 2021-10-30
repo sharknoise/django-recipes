@@ -1,0 +1,12 @@
+*.egg-info
+__pycache__
+dist/
+*.pyc
+.venv/
+.vscode/
+coverage.xml
+.coverage
+*.env
+.DS_Store
+staticfiles
+

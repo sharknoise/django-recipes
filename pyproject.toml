@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-recipes"
+version = "0.1.0"
+description = ""
+authors = ["sharknoise <sharknoise@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "3.2.8"
+psycopg2-binary = "^2.9.1"
+django-environ = "^0.8.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+black = "^21.9b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
