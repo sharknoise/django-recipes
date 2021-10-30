@@ -13,10 +13,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import environ
 from pathlib import Path
 
+from django.utils.translation import gettext_lazy as _
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-ROOT_DIR = environ.Path(__file__) - 4
+ROOT_DIR = environ.Path(__file__) - 3
 
 env = environ.Env()
 env.read_env(ROOT_DIR(".env"))
@@ -48,7 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "booklist.apps.BooklistConfig",
+    "recipes",
 ]
 
 MIDDLEWARE = [
@@ -86,10 +87,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": env.db(),
 }
 
 
