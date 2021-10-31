@@ -1,0 +1,327 @@
+[
+  {
+    "model": "recipes.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Яйца"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "Молоко сгущенное"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "Мука"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Сода"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "\"Снежок\""
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "Шоколад"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 7,
+    "fields": {
+      "name": "Сахар"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "Мёд жидкий"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 9,
+    "fields": {
+      "name": "Сода пищевая"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 10,
+    "fields": {
+      "name": "Сметана"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 11,
+    "fields": {
+      "name": "Сахарная пудра"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 12,
+    "fields": {
+      "name": "Масло сливочное"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 13,
+    "fields": {
+      "name": "Какао-порошок"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 14,
+    "fields": {
+      "name": "Разрыхлитель"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 15,
+    "fields": {
+      "name": "Ванильный экстракт"
+    }
+  },
+  {
+    "model": "recipes.ingredient",
+    "pk": 16,
+    "fields": {
+      "name": "Молоко"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+      "name": "Торт \"Нежный\"",
+      "description": "1. Взбивая вилкой, смешать все ингредиенты для теста. Оставить на 15 минут для загустения. Испечь 3-5 коржей.\r\n\r\n2. Каждый из коржей, пока не остыли, обильно пропитать \"снежком\".\r\n\r\n3. Украсить \"Нежный\" торт тертым шоколадом и поставить на несколько часов в холодильник."
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+      "name": "Торт \"Медовик\"",
+      "description": "Начнём с приготовления теста. Смешиваем яйца с сахаром. Взбиваем с помощью миксера до светлой воздушной массы.\r\nДобавляем жидкий мед, перемешиваем.\r\nВ просеянную муку добавляем соду.\r\nДобавляем муку в яично-медовую массу, перемешиваем ложкой до однородности - и тесто готово.\r\nВыливаем тесто в форму, покрытую пергаментом. Выпекаем в разогретой духовке при температуре 180 градусов 15-20 минут.\r\nПока печется медовик, готовим сметанный крем: взбиваем сметану и сахарную пудру.\r\nМедовый бисквит немного остужаем и теплым разрезаем на 3 коржа.\r\nПромазываем сметанным кремом коржи и бока медового торта.\r\nТорт \"Медовик\" со сметанным кремом обсыпаем крошкой. Даем пропитаться торту хотя бы 2-3 часа!\r\nМедовый торт со сметанным кремом готов. Приятного чаепития!"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+      "name": "Шоколадный торт",
+      "description": "1. Включите духовку и разогрейте до 180 градусов. Смажьте маслом две круглые формы диаметром 20 см и покройте пергаментом. (Или подготовьте одну форму и выпекайте два коржа по очереди.)\r\n\r\n2. Просейте в миску муку, какао и разрыхлитель.\r\n\r\n3. Добавьте яйца, сахар (сладкоежкам можно добавить еще 2 ст. ложки), размягченное масло, ваниль.\r\n\r\n4. Взбейте всё миксером до однородности. Вмешайте 2 ст. л. горячей воды. Если тесто не достаточно жидкое (оно должно капать с насадок миксера) добавьте еще 2 ложки горячей воды.\r\n\r\n5. Выложите тесто в две формы (поровну) и разровняйте поверхность.\r\n\r\n6. Выпекайте коржи 35-40 минут, чтобы они поднялись (коржи готовы, когда они начинают отходить от боков формы, можете проверить готовность деревянной палочкой).\r\n\r\n7. Приготовьте шоколадный крем-помадку. Просейте в миску какао и сахарную пудру. Добавьте растопленное масло и молоко. Взбейте до однородности. Если нужно, добавьте еще немного молока, чтобы помадка не была слишком густой.\r\n\r\n8. Остывшие коржи смажьте приготовленной шоколадной помадкой и уложите друг на друга.\r\n\r\nПриятного чаепития!"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 1,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 1,
+      "amount": "4 шт"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 2,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 2,
+      "amount": "2 банки"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 3,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 3,
+      "amount": "2 неполных стакана"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 4,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 4,
+      "amount": "1 ч. ложка"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 5,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 5,
+      "amount": "2 упаковки (по 500 г)"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 6,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 6,
+      "amount": ""
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 7,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 1,
+      "amount": "2 шт."
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 8,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 7,
+      "amount": "3 ст. л."
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 9,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 8,
+      "amount": "3 ст. л."
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 10,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 9,
+      "amount": "1 дес. ложка"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 11,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 3,
+      "amount": "1,5-2 стакана"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 12,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 10,
+      "amount": "600 г"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 13,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 11,
+      "amount": "0,5 стакана"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 14,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 1,
+      "amount": "4 шт."
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 15,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 12,
+      "amount": "225 г"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 16,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 7,
+      "amount": "1 стакан"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 17,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 13,
+      "amount": "0,25 стакана"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 18,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 3,
+      "amount": "1,75 стакана"
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 19,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 14,
+      "amount": "1 ч. л."
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 20,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 15,
+      "amount": "1 ч. л."
+    }
+  },
+  {
+    "model": "recipes.recipeingredients",
+    "pk": 21,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 16,
+      "amount": "3-4 ст. л."
+    }
+  }
+]
