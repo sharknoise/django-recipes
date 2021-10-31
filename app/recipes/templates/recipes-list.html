@@ -34,7 +34,11 @@
           {% for object in filter.qs %}
           <tr>
             <td>{{ object.id }}</td>
-            <td><a href="#">{{ object.name }}</a></td>
+            <td>
+              <a href="{% url 'recipe_detailed' object.id %}">
+                {{ object.name }}
+              </a>
+            </td>
             <td>
               <ul>
                 {% for ingredient in object.ingredients.all %}

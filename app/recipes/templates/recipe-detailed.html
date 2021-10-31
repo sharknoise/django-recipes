@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="card">
+    <div class="card-header bg-grey">
+      <h1 class='h2'>{{ object.name }}</h1>
+    </div>
+    <div class="card-body bg-light">
+      <h2 class='h5'>Ингредиенты:</h2>
+        <div>
+            <ul>
+                {% for ingredient in object.ingredients.all %}
+                <li>{{ ingredient }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+      <hr>
+      {{ object.description }}
+    </div>
+  </div>
+{% endblock %}
