@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <title>Рецепты</title>
+        <link rel="stylesheet" type="text/css" href="{% static '/css/library/bootstrap.min.css' %}" />
+    </head>
+  <body>
+    <header class="navbar navbar-dark sticky-top bg-dark">
+      <a class="navbar-brand px-3" href="/">Рецепты</a>
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    <script src="{% static "/js/library/bootstrap.min.js" %}"></script>
+    </main>
+  </body>
+</html>

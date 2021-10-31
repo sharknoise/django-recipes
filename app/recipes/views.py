@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.views.generic import ListView
+from recipes.models import Recipe
 
-# Create your views here.
+
+class RecipesListView(ListView):
+    model = Recipe
+    template_name = 'recipes-list.html'

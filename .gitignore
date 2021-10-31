@@ -9,4 +9,5 @@ coverage.xml
 *.env
 .DS_Store
 staticfiles
+/app/static
 

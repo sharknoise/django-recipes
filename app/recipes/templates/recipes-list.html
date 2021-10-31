@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if object_list %}
+    <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th scope="col">№</th>
+            <th scope="col">Название</th>
+            <th scope="col">Ингредиенты</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for object in object_list %}
+          <tr>
+            <td>{{ object.id }}</td>
+            <td><a href="#">{{ object.name }}</a></td>
+            <td>
+              <ul>
+                {% for ingredient in object.ingredients.all %}
+                <li>{{ ingredient }}</li>
+                {% endfor %}
+              </ul>
+            </td>
+          </tr>
+          {% endfor %}
+    {% else %}
+        <p>Рецептов не найдено.</p>
+    {% endif %}
+{% endblock %}
+
