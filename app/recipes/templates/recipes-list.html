@@ -1,17 +1,37 @@
 {% extends 'base.html' %}
 {% block content %}
+    <div class="card mb-3">
+      <div class="card-body">
+
+      </div>
+    </div>
     {% if object_list %}
     <div class="table-responsive">
       <table class="table table-striped table-sm">
         <thead>
           <tr>
             <th scope="col">№</th>
-            <th scope="col">Название</th>
-            <th scope="col">Ингредиенты</th>
+            <th scope="col">Название
+              <form method="get">
+                  <span class="form-group is-valid">
+                    <span class="mr-4 ml-2">{{ filter.form.name }}</span>
+                  </span>
+                <input class="btn btn-dark" type="submit" value="Искать">
+              </form>
+            </th>
+
+            <th scope="col">Ингредиенты
+              <form method="get">
+                  <span class="form-group is-valid">
+                    <span class="mr-4 ml-2">{{ filter.form.ingredients }}</span>
+                  </span>
+                  <input class="btn btn-dark" type="submit" value="Показать">
+              </form>
+            </th>
           </tr>
         </thead>
         <tbody>
-          {% for object in object_list %}
+          {% for object in filter.qs %}
           <tr>
             <td>{{ object.id }}</td>
             <td><a href="#">{{ object.name }}</a></td>

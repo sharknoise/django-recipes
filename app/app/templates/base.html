@@ -9,13 +9,15 @@
         <link rel="stylesheet" type="text/css" href="{% static '/css/library/bootstrap.min.css' %}" />
     </head>
   <body>
-    <header class="navbar navbar-dark sticky-top bg-dark">
-      <a class="navbar-brand px-3" href="/">Рецепты</a>
-    </header>
-    <main>
-      {% block content %}
-      {% endblock %}
-    <script src="{% static "/js/library/bootstrap.min.js" %}"></script>
-    </main>
+    <div class="p-4 p-md-5 mb-4">
+      <header class="navbar navbar-dark sticky-top bg-dark">
+        <a class="navbar-brand px-3" href="/">Рецепты</a>
+      </header>
+      <main>
+        {% block content %}
+        {% endblock %}
+      <script src="{% static "/js/library/bootstrap.min.js" %}"></script>
+      </main>
+    </div>
   </body>
 </html>
