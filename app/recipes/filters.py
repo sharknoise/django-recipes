@@ -4,9 +4,7 @@ from recipes.models import Ingredient, Recipe
 
 
 class RecipeFilter(django_filters.FilterSet):
-    #recipes = django_filters.ModelChoiceFilter(
-    #    queryset=Recipe.objects.all()
-    #)
+    """Filter by ingredient and by recipe name."""
 
     ingredients = django_filters.ModelChoiceFilter(
         queryset=Ingredient.objects.all()
