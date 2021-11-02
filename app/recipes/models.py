@@ -43,7 +43,11 @@ class RecipeIngredients(models.Model):
     """A model for many-to-many relation between Recipe and Ingredient."""
 
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
-    ingredient = models.ForeignKey(Ingredient, on_delete=models.PROTECT)
+    ingredient = models.ForeignKey(
+        Ingredient,
+        on_delete=models.PROTECT,
+        verbose_name='Ингредиент',
+    )
     amount = models.CharField("Количество", max_length=100, blank=True)
 
     class Meta:

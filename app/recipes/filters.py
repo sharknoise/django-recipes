@@ -9,6 +9,7 @@ class RecipeFilter(django_filters.FilterSet):
     ingredients = django_filters.ModelChoiceFilter(
         queryset=Ingredient.objects.all()
     )
+
     class Meta:
         model = Recipe
         fields = ['name']
